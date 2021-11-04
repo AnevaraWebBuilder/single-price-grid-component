@@ -1,0 +1,199 @@
+:root{
+
+/* FONT */
+
+	--karlaFont: font-family: 'Karla', sans-serif;
+
+/* COLORS */
+
+	--cyan: hsl(179, 62%, 43%);
+	--brightYellow: hsl(71, 73%, 54%);
+	--lightGray: hsl(204, 43%, 93%);
+	--grayishBlue: hsl(218, 22%, 67%);
+	--white: #FFF;
+}
+
+html{
+	box-sizing: border-box;
+	font-size: 62.5%; /* 1 REM = 10 PX */
+	font-family: 'Karla', sans-serif;
+}
+
+body{
+	background-color: var(--lightGray);
+}
+
+h2{
+	font-size: 2.5rem;
+	color: var(--cyan);
+}
+
+h3{
+	font-size: 1.8rem;
+	color: var(--white);
+}
+
+p{
+	font-size: 1.6rem;	
+	color: var(--white);
+}
+
+.price-grid{
+	display: flex;
+	flex-direction: column;
+	margin: 14rem auto 0;
+	max-width: 47%;
+	background-color: var(--white);
+	border-radius: 1rem;
+	box-shadow: 0 0 3rem -2rem;
+}
+
+.join-us{
+	padding: 2rem 4rem;
+}
+
+.join-us h3{
+	color: var(--brightYellow);
+}
+
+.join-us p{
+	color: var(--grayishBlue);
+}
+
+.bottom{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.subscription{
+	background-color: var(--cyan);
+	opacity: .9;
+	border-bottom-left-radius: 1rem;
+}
+
+.subscription p{
+	margin: 0;
+	font-weight: 400;
+	font-size: 1.5rem;
+}
+
+.subscription .price{
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	font-size: 3rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.subscription span{
+	font-size: 1.6rem;
+	font-weight: 400;
+	opacity: .7;
+}
+
+.sign-up-btn{
+	background-color: var(--brightYellow);
+	text-align: center;
+	padding: 1.5rem 0;
+	border-radius: .5rem;
+	margin-top: 2rem;
+	box-shadow: 0 0 2rem -1rem;
+	transition: all .3s ease;
+	cursor: pointer;
+}
+
+.sign-up-btn:hover{
+	opacity: .9;
+}
+
+.sign-up-btn p{
+	font-weight: 700;
+}
+
+
+.why-us{
+	background-color: var(--cyan);
+	opacity: .8;
+	border-bottom-right-radius: 1rem;
+}
+
+.why-us p{
+	font-size: 1.3rem;
+	margin: .5rem;
+	font-weight: 400;
+	opacity: .8;
+}
+
+.subscription, .why-us{
+	padding: 3rem 4rem;
+}
+
+/* RESPONSIVE DESIGN */
+
+
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+
+@media (max-width: 1199px) and (min-width: 992px){
+
+
+
+
+
+}
+
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+
+@media (max-width: 991px) and (min-width: 768px){
+
+	
+
+	.bottom{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.subscription{
+		border-radius: 0;
+	}
+
+	.why-us{
+		border-bottom-left-radius: 1rem;
+	}
+
+
+
+}
+
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+
+@media (max-width: 767px){
+
+	.price-grid{
+		min-width: 95%;
+	}
+
+
+	.bottom{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.subscription{
+		border-radius: 0;
+	}
+
+	.why-us{
+		border-bottom-left-radius: 1rem;
+	}
+
+
+	
+}
